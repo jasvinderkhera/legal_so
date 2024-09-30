@@ -351,7 +351,7 @@ function Home() {
               <div className="lawyer_pic">
                 <img src={lawyer2} alt="" />
               </div>
-              <h5 className="text-center">Adv. Rajesh Kumar</h5>
+              <h5 className="text-center">Adv. Harshwardhan Sharma</h5>
               <p className="text-center">
                 Corporate/Intellectual Property Lawyer (HC)
               </p>
@@ -369,7 +369,7 @@ function Home() {
               <div className="lawyer_pic">
                 <img src={lawyer3} alt="" />
               </div>
-              <h5 className="text-center">Adv. Priya Sharma</h5>
+              <h5 className="text-center">Adv. Rajendra Prasad</h5>
               <p className="text-center">Family/Divorce Lawyer (SC)</p>
               <div className="tags">
                 <span>Family Law</span>
@@ -401,7 +401,7 @@ function Home() {
               <div className="lawyer_pic">
                 <img src={lawyer5} alt="" />
               </div>
-              <h5 className="text-center">Adv. Neha Gupta</h5>
+              <h5 className="text-center">Adv. Nitin Gupta</h5>
               <p className="text-center">Civil/Property Lawyer (SC)</p>
               <div className="tags">
                 <span>Civil Law</span>

@@ -64,7 +64,7 @@ function SecondSlider() {
             <div className="testimonial-slider-item">
                 <div className="inner_doc">
                     <img src={lawyer1} alt="Lawyer 1" />
-                    <h4 className="text-center">Ms. Aisha Khan</h4>
+                    <h4 className="text-center">Mrs. Anjali Verma</h4>
                     <h5 className="text-center">Partner, XYZ Law Firm</h5>
                     <p className="text-center">
                         “Ms. Aisha Khan provided exceptional legal advice and support throughout our case. Her professionalism and dedication were evident every step of the way. I would not hesitate to recommend her services to anyone in need of legal assistance.” 
@@ -78,7 +78,7 @@ function SecondSlider() {
             <div className="testimonial-slider-item">
                 <div className="inner_doc">
                     <img src={lawyer2} alt="Lawyer 2" />
-                    <h4 className="text-center">Mr. Samuel Lee</h4>
+                    <h4 className="text-center">Mr. Harshwardhan Sharma</h4>
                     <h5 className="text-center">Senior Attorney, Legal Experts Inc.</h5>
                     <p className="text-center">
                         “Working with Mr. Samuel Lee was a truly positive experience. His expertise and strategic approach to our case were invaluable. I am grateful for his hard work and highly recommend him to anyone seeking knowledgeable legal representation.” 
