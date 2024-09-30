@@ -7,7 +7,9 @@
   grid-template-columns: 4fr 1fr;
   gap: 50px;
 }
-
+.cart_section .cart_row .col1{
+  overflow-x: auto;
+}
 table,
 tr,
 td {
