@@ -48,7 +48,7 @@ function Services() {
               Our Legal team has experience handling various types of property
               disputes, including:
             </p>
-            <ul>
+            <ul className="list_1">
               <li>
                 <strong>Understanding Your Needs:</strong> We listen to your
                 concerns and review your case carefully to develop the best
@@ -72,7 +72,7 @@ function Services() {
             </ul>
 
             <h3>Why Choose Legal.So ?</h3>
-            <ul className="list_1">
+            <ul className="list_2">
               <li>
                 <strong>Experienced Property Dispute Lawyers:</strong> Our teams
                 has years of experience in handling complex property issues.
