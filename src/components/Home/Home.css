@@ -90,6 +90,9 @@
     width: 130px;
     border-radius: 5px;
   }
+  .grid-item p{
+    padding-bottom: 0 !important;
+  }
   
   .section {
     padding: 50px 0;
@@ -414,6 +417,9 @@
       width: 130px;
       border-radius: 5px;
     }
+
+   
+
     .lawyers .grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -427,12 +433,13 @@
     }
     .services_section .grid {
       display: flex;
+      min-width: 1980px ;
+    }
+    .services_section .services_grid{
+      overflow-x: auto;
     }
     .services_section .grid .service_grid_item {
       width: 300px;
-    }
-    .services_grid{
-      min-width: 1980px ;
     }
 
     .testimonial_section .custom_container h2::before{

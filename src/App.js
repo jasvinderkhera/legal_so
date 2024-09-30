@@ -11,6 +11,7 @@ import Cart from "./components/Cart/Cart";
 import Blog from "./components/Blog/Blog";
 import BlogDetailPage from "./components/BlogDetailPage/BlogDetailPage"
 import { ToastContainer } from "react-toastify";
+import OrderSuccess from "./components/OrderSuccess/OrderSuccess";
 
 function App() {
   return (
@@ -35,8 +36,10 @@ function App() {
     <Route path="/lawyerlisting" element={<LawyerListing/>} />
     <Route path="/lawyer" element={<Lawyer/>} />
     <Route path="/consult" element={<Consult/>} />
+    <Route path="/caserequest" element={<Consult/>} />
     <Route path="/legalkit" element={<LegalKit />} />
     <Route path="/cart" element={<Cart />} />
+    <Route path="/cart/ordersuccess" element={<OrderSuccess />} />
     <Route path="/blog" element={<Blog/>} />
     <Route path="/blogdetail" element={<BlogDetailPage/>} />
     </Routes>

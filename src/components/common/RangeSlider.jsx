@@ -15,6 +15,7 @@ import 'ion-rangeslider/js/ion.rangeSlider.min.js';
         max: max,
         from: from,
         to: to,
+        step: 500,
         onFinish: function (data) {
           onChange(data.from, data.to);
         }

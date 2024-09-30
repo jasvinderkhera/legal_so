@@ -5,8 +5,10 @@ import star from "../../assets/images/category_logo/star.png"
 import rating from "../../assets/images/category_logo/rating.png"
 import briefcase from "../../assets/images/category_logo/briefcase.png"
 import verified from "../../assets/images/category_logo/verified.png"
+import { useLocation } from 'react-router-dom'
 
 function Consult() {
+  let decisionInput = useLocation();
 const [modal,setModal] = useState("hide")
 
   return (
@@ -15,7 +17,7 @@ const [modal,setModal] = useState("hide")
       <div class="custom_container">
         <div class="lawyer_page_row">
           <div class="col_9">
-            <div class="lawyer_page_profile">
+            { decisionInput.pathname === "/consult" ? <div class="lawyer_page_profile">
               <img src={lawyer2} alt="" />
               <div class="lawyer_detail">
                 <h3>Adv. Harshwardhan Sharma</h3>
@@ -42,7 +44,7 @@ const [modal,setModal] = useState("hide")
                   </p>
                 </div>
               </div>
-            </div>
+            </div> : ""}
 
             <div class="consultation_form">
                 <h3>Free Consultation Booking</h3>
@@ -126,7 +128,7 @@ const [modal,setModal] = useState("hide")
                 </form>
             </div>
           </div>
-          <div class="col_3">
+          { decisionInput.pathname === "/consult" ? <div class="col_3">
             <h4>Language</h4>
             <div class="languages">
               <span>English</span>
@@ -142,7 +144,7 @@ const [modal,setModal] = useState("hide")
               <span>Tees Hazari Court</span>
               <span>Saket Court</span>
             </div>
-          </div>
+          </div> : ""}
         </div>
 
         

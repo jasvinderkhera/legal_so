@@ -495,7 +495,7 @@ function Header() {
           </div>
         </div>
         <div className="nav-link menu_links dropdown">
-          <Link to={'/consult'}>Case Request</Link>
+          <Link to={'/caserequest'}>Case Request</Link>
           <i className="fa-solid fa-angle-down"></i>
           <div className="dropdown-menu">
             <div className="menu_container">

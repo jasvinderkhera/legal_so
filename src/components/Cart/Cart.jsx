@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
 import { useDispatch, useSelector } from "react-redux";
-import verified from "../../assets/images/category_logo/verified.png";
 import emptyCart from "../../assets/images/empty.png";
 import {
   decreaseItem,
   increaseItem,
   removeFromCart,
 } from "../../redux/cartSlice";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const [finalPrice, setFinalPrice] = useState(null);
   const [changeCount, setChangeCount] = useState(0);
-  const [modal, setModal] = useState("hide");
   const cartItems = useSelector((state) => state.cart.cartData);
   const dispatch = useDispatch();
   console.log("change", changeCount);
@@ -38,7 +37,7 @@ function Cart() {
   useEffect(() => {
     let totalPrice = cartItems
       .map((item) => {
-        return item.price;
+        return item.price*item.quantity;
       })
       .reduce((total, current) => total + current, 0);
     setFinalPrice(totalPrice);
@@ -111,12 +110,12 @@ function Cart() {
                 <div className="totalPayable">
                   <h2>{finalPrice != 0 ? <h2>₹{finalPrice}</h2> : 0} </h2>
 
-                  <button
+                  <Link
+                  to={"/cart/ordersuccess"}
                     className="placeorder_btn"
-                    onClick={() => setModal("show")}
                   >
                     Place Order
-                  </button>
+                  </Link>
                 </div>
               </div>
             ) : (
@@ -249,12 +248,7 @@ function Cart() {
                           <input type="checkbox" checked="checked" name="sameadr" />{" "}
                           Shipping address same as billing
                         </label>
-                        <input
-                          type="submit"
-                          value="Continue to checkout"
-                          className="btn"
-                          onClick={() => setModal("show")}
-                        />
+                        <Link to={"/cart/ordersuccess"} className="checkout_btn"> Continue to Checkout</Link>
                       </form>
                     </div>
                   </div>
@@ -265,19 +259,7 @@ function Cart() {
         </div>
       </section>
 
-      <div
-        className="form_modal"
-        style={modal === "hide" ? { display: "none" } : { display: "flex" }}
-      >
-        <div className="form_content">
-          <div className="div_1">
-          <img src={verified} alt="" />
-            <h3>Order Placed Successfully !</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti ut perspiciatis aut eum magni ipsa sapiente id eaque, tempora inventore veritatis, beatae nisi iure odit accusamus, dolorum tenetur blanditiis! </p>
-            </div>
-            <i class="fa-solid fa-x" onClick={()=>window.location.pathname="/"}></i>
-        </div>
-      </div>
+      
     </div>
   );
 }
