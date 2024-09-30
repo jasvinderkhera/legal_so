@@ -72,7 +72,7 @@ function Services() {
             </ul>
 
             <h3>Why Choose Legal.So ?</h3>
-            <ul>
+            <ul className="list_1">
               <li>
                 <strong>Experienced Property Dispute Lawyers:</strong> Our teams
                 has years of experience in handling complex property issues.
@@ -135,7 +135,7 @@ function Services() {
           </div>
           <div className="other_services">
             <h4>Other Services</h4>
-            <ul>
+            <ul className="list_2">
               <li>Corporate Law</li>
               <li>Civil Litigation</li>
               <li>Criminal Defense</li>

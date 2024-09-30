@@ -128,7 +128,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col">
-            <h4>Contact & Support</h4>
+            <h4 className="mob_pad">Contact & Support</h4>
             <ul>
               <li>
                 <a href="">Contact Us</a>

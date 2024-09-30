@@ -82,4 +82,7 @@ footer {
     footer .custom_container .footer_row .col h4{
       font-size: 14px;
     }
+    .mob_pad{
+      margin-bottom: 40px;
+    }
   }

@@ -36,6 +36,9 @@
   .services_details {
     margin-top: 50px;
   }
+  .list_1, .list_2{
+    padding-left: 15px !important;
+  }
   
   .faq h3,
   p,
