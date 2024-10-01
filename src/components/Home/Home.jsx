@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Home.css"
+import { Link } from 'react-router-dom'
 import FirstSlider from "../common/FirstSlider"
 import media1 from "../../assets/images/news/img_1.png"
 import media2 from "../../assets/images/news/img_2.png"
@@ -53,7 +54,7 @@ function Home() {
       <div className="categories">
         <h2 className="categories_heading">Law Categories</h2>
         <div className="grid">
-          <a href="" className="grid-item">
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -61,8 +62,8 @@ function Home() {
               width="50"
             />
             <p>Constitutional Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={criminallaw}
               alt=""
@@ -70,8 +71,8 @@ function Home() {
               width="50"
             />
             <p>Criminal Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={civilright}
               alt=""
@@ -79,8 +80,8 @@ function Home() {
               width="50"
             />
             <p>Civil Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={order}
               alt=""
@@ -88,8 +89,8 @@ function Home() {
               width="50"
             />
             <p>Administrative Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={familylaw}
               alt=""
@@ -97,8 +98,8 @@ function Home() {
               width="50"
             />
             <p>Family Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={corporatelaw}
               alt=""
@@ -106,8 +107,8 @@ function Home() {
               width="50"
             />
             <p>Corporate Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link href="" className="grid-item">
             <img
               src={protectedimg}
               alt=""
@@ -115,8 +116,8 @@ function Home() {
               width="50"
             />
             <p>Contract Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={stamp}
               alt=""
@@ -124,8 +125,8 @@ function Home() {
               width="50"
             />
             <p>Property Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={labourlaw}
               alt=""
@@ -133,8 +134,8 @@ function Home() {
               width="50"
             />
             <p>Labor and Employment Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={onlinetax}
               alt=""
@@ -142,8 +143,8 @@ function Home() {
               width="50"
             />
             <p>Taxation Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={international}
               alt=""
@@ -151,8 +152,8 @@ function Home() {
               width="50"
             />
             <p>Environmental Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link href="" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -160,8 +161,8 @@ function Home() {
               width="50"
             />
             <p>Intellectual Property Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -169,8 +170,8 @@ function Home() {
               width="50"
             />
             <p>Consumer Protection Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -178,8 +179,8 @@ function Home() {
               width="50"
             />
             <p>Cyber Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -187,8 +188,8 @@ function Home() {
               width="50"
             />
             <p>Maritime Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -196,8 +197,8 @@ function Home() {
               width="50"
             />
             <p>Banking and Finance Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -205,8 +206,8 @@ function Home() {
               width="50"
             />
             <p>Human Rights Law</p>
-          </a>
-          <a href="" className="grid-item">
+          </Link>
+          <Link to="/services" className="grid-item">
             <img
               src={complaint}
               alt=""
@@ -214,7 +215,7 @@ function Home() {
               width="50"
             />
             <p>International Law</p>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -237,7 +238,7 @@ function Home() {
                   <li>Compliance and regulatory advice Intellectual advice</li>
                   <li>Intellectual property protection</li>
                 </ul>
-                <a href="" className="know_more_btn">Know More...</a>
+                <Link to={"/services"} className="know_more_btn">Know More...</Link>
               </div>
             </div>
             <div className="service_grid_item">
@@ -253,7 +254,7 @@ function Home() {
                   <li>Compliance and regulatory advice Intellectual advice</li>
                   <li>Intellectual property protection</li>
                 </ul>
-                <a href="" className="know_more_btn">Know More...</a>
+                <Link to={"/services"} className="know_more_btn">Know More...</Link>
               </div>
             </div>
             <div className="service_grid_item">
@@ -269,7 +270,7 @@ function Home() {
                   <li>Compliance and regulatory advice Intellectual advice</li>
                   <li>Intellectual property protection</li>
                 </ul>
-                <a href="" className="know_more_btn">Know More...</a>
+                <Link to={"/services"} className="know_more_btn">Know More...</Link>
               </div>
             </div>
             <div className="service_grid_item">
@@ -285,7 +286,7 @@ function Home() {
                   <li>Compliance and regulatory advice Intellectual advice</li>
                   <li>Intellectual property protection</li>
                 </ul>
-                <a href="" className="know_more_btn">Know More...</a>
+                <Link to={"/services"} className="know_more_btn">Know More...</Link>
               </div>
             </div>
             <div className="service_grid_item">
@@ -301,7 +302,7 @@ function Home() {
                   <li>Compliance and regulatory advice Intellectual advice</li>
                   <li>Intellectual property protection</li>
                 </ul>
-                <a href="" className="know_more_btn">Know More...</a>
+                <Link to={"/services"} className="know_more_btn">Know More...</Link>
               </div>
             </div>
             <div className="service_grid_item">
@@ -317,7 +318,7 @@ function Home() {
                   <li>Compliance and regulatory advice Intellectual advice</li>
                   <li>Intellectual property protection</li>
                 </ul>
-                <a href="" className="know_more_btn">Know More...</a>
+                <Link to={"/services"} className="know_more_btn">Know More...</Link>
               </div>
             </div>
           </div>
@@ -345,7 +346,7 @@ function Home() {
                 <span>Divorce Law</span>
                 <span>Litigation Law</span>
               </div>
-              <a href="">Consult Now</a>
+              <Link to={"/lawyerlisting"}>Consult Now</Link>
             </div>
             <div className="lawyer_grid_item">
               <div className="lawyer_pic">
@@ -362,7 +363,7 @@ function Home() {
                 <span>Patent Law</span>
                 <span>Trademark</span>
               </div>
-              <a href="">Consult Now</a>
+              <Link to={"/lawyerlisting"}>Consult Now</Link>
             </div>
 
             <div className="lawyer_grid_item">
@@ -378,7 +379,7 @@ function Home() {
                 <span>Property Disputes</span>
                 <span>Adoption Law</span>
               </div>
-              <a href="">Consult Now</a>
+              <Link to={"/lawyerlisting"}>Consult Now</Link>
             </div>
 
             <div className="lawyer_grid_item">
@@ -394,7 +395,7 @@ function Home() {
                 <span>Fraud Cases</span>
                 <span>Regulatory Compliance</span>
               </div>
-              <a href="">Consult Now</a>
+              <Link to={"/lawyerlisting"}>Consult Now</Link>
             </div>
 
             <div className="lawyer_grid_item">
@@ -410,7 +411,7 @@ function Home() {
                 <span>Inheritance Law</span>
                 <span>Land Disputes</span>
               </div>
-              <a href="">Consult Now</a>
+              <Link to={"/lawyerlisting"}>Consult Now</Link>
             </div>
           </div>
         </div>

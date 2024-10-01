@@ -249,6 +249,9 @@
     .lawyer_page_profile>img{
       margin: auto;
     }
+    .lawyer_page .lawyer_page_profile h3{
+      text-align: center;
+    }
     .lawyer_experience{
       justify-content: center;
       margin: 10px auto;

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import "./Blog.css"
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { blogDetail } from '../../redux/blogSlice'
 import { Link } from 'react-router-dom'
 
 function Blog() {
   let [blog, setBlog] = useState([])
-  const blogItem = useSelector(state => state.blog)
 
   const dispatch = useDispatch();
 

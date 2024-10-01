@@ -6,10 +6,13 @@ import rating from "../../assets/images/category_logo/rating.png"
 import briefcase from "../../assets/images/category_logo/briefcase.png"
 import verified from "../../assets/images/category_logo/verified.png"
 import { useLocation } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Consult() {
   let decisionInput = useLocation();
 const [modal,setModal] = useState("hide")
+const lawyerItem = useSelector((state)=> state.lawyer.lawyerData)
+
 
   return (
     <div>
@@ -18,16 +21,16 @@ const [modal,setModal] = useState("hide")
         <div class="lawyer_page_row">
           <div class="col_9">
             { decisionInput.pathname === "/consult" ? <div class="lawyer_page_profile">
-              <img src={lawyer2} alt="" />
+              <img src={lawyerItem.imgSrc} alt="" />
               <div class="lawyer_detail">
-                <h3>Adv. Harshwardhan Sharma</h3>
+                <h3>{lawyerItem.name}</h3>
                 <div class="lawyer_rating_main">
                            <div className="rating_img">
-                           <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={rating} alt="" />
+                           <img src={lawyerItem.ratings[0].s1} alt="" />
+            <img src={lawyerItem.ratings[0].s2} alt="" />
+            <img src={lawyerItem.ratings[0].s3} alt="" />
+            <img src={lawyerItem.ratings[0].s4} alt="" />
+            <img src={lawyerItem.ratings[0].s5} alt="" />
                            </div>
 
                   <span>4.9 | 50+ user ratings</span>
@@ -35,19 +38,19 @@ const [modal,setModal] = useState("hide")
                 <div class="lawyer_experience">
                      <img src={briefcase} alt="" />
                     
-                  <h4>8+ Years of Experience</h4>
+                  <h4>{lawyerItem.exp}</h4>
                 </div>
                 <div class="about_section">
                   <h4>About</h4>
                   <p>
-                  Harshwardhan Sharma is a seasoned attorney with over 8 years of experience in various areas of law, including family law, criminal defense, and corporate law. Committed to providing personalized legal solutions, Harshwardhan believes in a client-centered approach that prioritizes clear communication and understanding.
+                  {lawyerItem.name} is a seasoned attorney with over 8 years of experience in various areas of law, including family law, criminal defense, and corporate law. Committed to providing personalized legal solutions, Harshwardhan believes in a client-centered approach that prioritizes clear communication and understanding.
                   </p>
                 </div>
               </div>
             </div> : ""}
 
             <div class="consultation_form">
-                <h3>Free Consultation Booking</h3>
+            { decisionInput.pathname === "/consult" ? <h3>Free Consultation Booking</h3> : <h3>Case Request</h3> }
                 <form action="" method="post">
                     <div class="name form_div">
                         <div class="first">
