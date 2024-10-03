@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/images/logo.jpg";
 import { Link } from "react-router-dom";
-import menubar from "../../assets/images/menu.png"
+import menubar from "../../assets/images/menu.png";
 
 function Header() {
-  const [menu, setMenu] = useState("hide")
-  let ShowMenu = () => {
-    
-  }
+  const [menu, setMenu] = useState("hide");
+  let ShowMenu = () => {};
   return (
     <navbar className="custom_container">
       <div className="logo">
@@ -31,307 +29,236 @@ function Header() {
               <div className="menu_col">
                 <h4>Civil Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Property disputes</a>
+                  <Link to={"/services"}>Property disputes</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">
+                  <Link to={"/services"}>
                     Family law (divorce, child custody, inheritance)
-                  </a>
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Consumer protection</a>
+                  <Link to={"/services"}>Consumer protection</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Contractual disputes</a>
+                  <Link to={"/services"}>Contractual disputes</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Criminal Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Criminal defense</a>
+                  <Link to={"/services"}>Criminal defense</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Bail applications</a>
+                  <Link to={"/services"}>Bail applications</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">FIR lodging</a>
+                  <Link to={"/services"}>FIR lodging</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Legal representation in criminal cases</a>
+                  <Link to={"/services"}>
+                    Legal representation in criminal cases
+                  </Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Corporate Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Company formation and registration</a>
+                  <Link to={"/services"}>
+                    Company formation and registration
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Corporate compliance and governance</a>
+                  <Link to={"/services"}>
+                    Corporate compliance and governance
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Mergers and acquisitions</a>
+                  <Link to={"/services"}>Mergers and acquisitions</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Insolvency and bankruptcy</a>
+                  <Link to={"/services"}>Insolvency and bankruptcy</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Intellectual Property Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Trademark registration and disputes</a>
+                  <Link to={"/services"}>
+                    Trademark registration and disputes
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Copyright protection</a>
+                  <Link to={"/services"}>Copyright protection</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Patent filing</a>
+                  <Link to={"/services"}>Patent filing</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Design protection</a>
+                  <Link to={"/services"}>Design protection</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Taxation Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Tax advisory and compliance</a>
+                  <Link to={"/services"}>Tax advisory and compliance</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">GST registration and disputes</a>
+                  <Link to={"/services"}>GST registration and disputes</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Income tax filing</a>
+                  <Link to={"/services"}>Income tax filing</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Handling tax audits and appeals</a>
+                  <Link to={"/services"}>Handling tax audits and appeals</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Labour and Employment Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Employment contracts</a>
+                  <Link to={"/services"}>Employment contracts</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Industrial disputes</a>
+                  <Link to={"/services"}>Industrial disputes</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Labor compliance and policies</a>
+                  <Link to={"/services"}>Labor compliance and policies</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Employee benefits and compensation</a>
+                  <Link to={"/services"}>
+                    Employee benefits and compensation
+                  </Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Real Estate Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Property registration</a>
+                  <Link to={"/services"}>Property registration</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Land disputes</a>
+                  <Link to={"/services"}>Land disputes</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Lease and rental agreements</a>
+                  <Link to={"/services"}>Lease and rental agreements</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Real estate transactions</a>
+                  <Link to={"/services"}>Real estate transactions</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Dispute Resolution and Arbitration</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Arbitration proceedings</a>
+                  <Link to={"/services"}>Arbitration proceedings</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Mediation services</a>
+                  <Link to={"/services"}>Mediation services</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Negotiation of settlements</a>
+                  <Link to={"/services"}>Negotiation of settlements</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Litigation support</a>
+                  <Link to={"/services"}>Litigation support</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Banking and Finance Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Loan agreements</a>
+                  <Link to={"/services"}>Loan agreements</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Debt recovery</a>
+                  <Link to={"/services"}>Debt recovery</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Financial compliance</a>
+                  <Link to={"/services"}>Financial compliance</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Bankruptcy filings</a>
+                  <Link to={"/services"}>Bankruptcy filings</Link>
                 </div>
               </div>
               <div className="menu_col">
                 <h4>Cyber Law</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Data protection and privacy</a>
+                  <Link to={"/services"}>Data protection and privacy</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Cybercrime investigation and defense</a>
+                  <Link to={"/services"}>
+                    Cybercrime investigation and defense
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">E-commerce and internet law compliance</a>
+                  <Link to={"/services"}>
+                    E-commerce and internet law compliance
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="nav-link menu_links dropdown">
-          <Link to={'/lawyerlisting'}>Find a Lawyer</Link>
+          <Link to={"/lawyerlisting"}>Find a Lawyer</Link>
           <i className="fa-solid fa-angle-down"></i>
           <div className="dropdown-menu">
-            <div className="menu_container">
+            <div className="menu_container find_lawyer_container">
               <div className="menu_col">
-                <h4>Civil Law</h4>
+                <h4>By Practice Area</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Property disputes</a>
+                  <Link to={"/lawyerlisting"}>Property dispute</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">
+                  <Link to={"/lawyerlisting"}>
                     Family law (divorce, child custody, inheritance)
-                  </a>
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Consumer protection</a>
+                  <Link to={"/lawyerlisting"}>Consumer protection</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Contractual disputes</a>
-                </div>
-              </div>
-              <div className="menu_col">
-                <h4>Criminal Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Criminal defense</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Bail applications</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">FIR lodging</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Legal representation in criminal cases</a>
+                  <Link to={"/lawyerlisting"}>Contractual dispute</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Corporate Law</h4>
+                <h4>By Location</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Company formation and registration</a>
+                  <Link to={"/lawyerlisting"}>Search by City</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Corporate compliance and governance</a>
+                  <Link to={"/lawyerlisting"}>Search by State/Region</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Mergers and acquisitions</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Insolvency and bankruptcy</a>
+                  <Link to={"/lawyerlisting"}>Map of Lawyers Availability</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Intellectual Property Law</h4>
+                <h4>By Language</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Trademark registration and disputes</a>
+                  <Link to={"/lawyerlisting"}>Spanish</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Copyright protection</a>
+                  <Link to={"/lawyerlisting"}>Mandarin</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Patent filing</a>
+                  <Link to={"/lawyerlisting"}>French</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Design protection</a>
-                </div>
-              </div>
-              <div className="menu_col">
-                <h4>Taxation Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Tax advisory and compliance</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">GST registration and disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Income tax filing</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Handling tax audits and appeals</a>
+                  <Link to={"/lawyerlisting"}>Other Languages</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Labour and Employment Law</h4>
+                <h4>Top Rated Lawyers</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Employment contracts</a>
+                  <Link to={"/lawyerlisting"}>Awards & Recognition</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Industrial disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Labor compliance and policies</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Employee benefits and compensation</a>
+                  <Link to={"/lawyerlisting"}>Featured Lawyers</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Real Estate Law</h4>
+                <h4>Top Rated Lawyers</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Property registration</a>
+                  <Link to={"/lawyerlisting"}>
+                    Online Availability (e.g., chat, video consultation)
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Land disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Lease and rental agreements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Real estate transactions</a>
-                </div>
-              </div>
-              <div className="menu_col">
-                <h4>Dispute Resolution and Arbitration</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Arbitration proceedings</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Mediation services</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Negotiation of settlements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Litigation support</a>
-                </div>
-              </div>
-              <div className="menu_col">
-                <h4>Banking and Finance Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Loan agreements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Debt recovery</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Financial compliance</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Bankruptcy filings</a>
-                </div>
-              </div>
-              <div className="menu_col">
-                <h4>Cyber Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Data protection and privacy</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Cybercrime investigation and defense</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">E-commerce and internet law compliance</a>
+                  <Link to={"/lawyerlisting"}>In-Person Availability</Link>
                 </div>
               </div>
             </div>
@@ -343,310 +270,169 @@ function Header() {
           <div className="dropdown-menu">
             <div className="menu_container">
               <div className="menu_col">
-                <h4>Civil Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Property disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">
-                    Family law (divorce, child custody, inheritance)
-                  </a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Consumer protection</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Contractual disputes</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Sale Deed
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Criminal Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Criminal defense</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Bail applications</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">FIR lodging</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Legal representation in criminal cases</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Wills
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Corporate Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Company formation and registration</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Corporate compliance and governance</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Mergers and acquisitions</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Insolvency and bankruptcy</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Contracts
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Intellectual Property Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Trademark registration and disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Copyright protection</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Patent filing</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Design protection</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Lease Agreements
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Taxation Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Tax advisory and compliance</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">GST registration and disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Income tax filing</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Handling tax audits and appeals</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Power of Attorney
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Labour and Employment Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Employment contracts</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Industrial disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Labor compliance and policies</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Employee benefits and compensation</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Partnership Agreement
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Real Estate Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Property registration</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Land disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Lease and rental agreements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Real estate transactions</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Gift Deed
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Dispute Resolution and Arbitration</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Arbitration proceedings</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Mediation services</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Negotiation of settlements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Litigation support</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Vendor Agreement
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Banking and Finance Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Loan agreements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Debt recovery</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Financial compliance</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Bankruptcy filings</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Non-Disclosure Agreement
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Cyber Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Data protection and privacy</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Cybercrime investigation and defense</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">E-commerce and internet law compliance</a>
-                </div>
+                <Link to={"/legalkit"} className="menuOptions">
+                  Service Agreement
+                </Link>
+              </div>
+              <div className="menu_col">
+                <Link to={"/legalkit"} className="menuOptions">
+                  Franchise Agreement
+                </Link>
+              </div>
+              <div className="menu_col">
+                <Link to={"/legalkit"} className="menuOptions">
+                  Loan Agreement
+                </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="nav-link menu_links dropdown">
-          <Link to={'/caserequest'}>Case Request</Link>
+          <Link to={"/caserequest"}>Case Request</Link>
           <i className="fa-solid fa-angle-down"></i>
           <div className="dropdown-menu">
             <div className="menu_container">
               <div className="menu_col">
-                <h4>Civil Law</h4>
+                <h4>Request a Consultation</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Property disputes</a>
+                  <Link to={"/consult"}>Online Form</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">
-                    Family law (divorce, child custody, inheritance)
-                  </a>
+                  <Link to={"/consult"}>Phone Contact</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Consumer protection</a>
+                  <Link to={"/consult"}>Preferred method of contact</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Contractual disputes</a>
+                  <Link to={"/consult"}>Availability of consultation</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Criminal Law</h4>
+                <h4>Phone Contact</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Criminal defense</a>
+                  <Link to={"/consult"}>Direct Line</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Bail applications</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">FIR lodging</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Legal representation in criminal cases</a>
+                  <Link to={"/consult"}>Office Hours</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Corporate Law</h4>
+                <h4>Submit Case Details</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Company formation and registration</a>
+                  <Link to={"/consult"}>Brief Description of Your Case</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Corporate compliance and governance</a>
+                  <Link to={"/consult"}>Relevant Dates and Events</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Mergers and acquisitions</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Insolvency and bankruptcy</a>
+                  <Link to={"/consult"}>Any Existing Legal Documents</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Intellectual Property Law</h4>
+                <h4>Confidentiality Assurance</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Trademark registration and disputes</a>
+                  <Link to={"/consult"}>Explanation of Privacy Policies</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Copyright protection</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Patent filing</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Design protection</a>
+                  <Link to={"/consult"}>Secure Submission Process</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Taxation Law</h4>
+                <h4>Follow-Up on Existing Cases</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Tax advisory and compliance</a>
+                  <Link to={"/consult"}>Check Case Status</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">GST registration and disputes</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Income tax filing</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Handling tax audits and appeals</a>
+                  <Link to={"/consult"}>Document Upload</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Labour and Employment Law</h4>
+                <h4>Legal Fees & Payment Options</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Employment contracts</a>
+                  <Link to={"/consult"}>Overview of Fees</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Industrial disputes</a>
+                  <Link to={"/consult"}>Payment Plans Available</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Labor compliance and policies</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Employee benefits and compensation</a>
+                  <Link to={"/consult"}>Acceptable Payment Methods</Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Real Estate Law</h4>
+                <h4>Resources for New Clients</h4>
                 <div className="nav-link dropdown_items">
-                  <a href="">Property registration</a>
+                  <Link to={"/consult"}>
+                    What to Expect During the Consultation
+                  </Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Land disputes</a>
+                  <Link to={"/consult"}>Preparing for Your First Meeting</Link>
                 </div>
                 <div className="nav-link dropdown_items">
-                  <a href="">Lease and rental agreements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Real estate transactions</a>
-                </div>
-              </div>
-              <div className="menu_col">
-                <h4>Dispute Resolution and Arbitration</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Arbitration proceedings</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Mediation services</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Negotiation of settlements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Litigation support</a>
+                  <Link to={"/consult"}>
+                    Frequently Asked Questions about Legal Processes
+                  </Link>
                 </div>
               </div>
               <div className="menu_col">
-                <h4>Banking and Finance Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Loan agreements</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Debt recovery</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Financial compliance</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Bankruptcy filings</a>
-                </div>
+                <Link to={"/consult"} className="menuOptions">
+                  Contact a Specific Lawyer
+                </Link>
               </div>
               <div className="menu_col">
-                <h4>Cyber Law</h4>
-                <div className="nav-link dropdown_items">
-                  <a href="">Data protection and privacy</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">Cybercrime investigation and defense</a>
-                </div>
-                <div className="nav-link dropdown_items">
-                  <a href="">E-commerce and internet law compliance</a>
-                </div>
+                <Link to={"/consult"} className="menuOptions">
+                  Referral Service
+                </Link>
+              </div>
+              <div className="menu_col">
+                <Link to={"/consult"} className="menuOptions">
+                  Feedback & Testimonials
+                </Link>
               </div>
             </div>
           </div>
@@ -656,28 +442,46 @@ function Header() {
         </div>
       </div>
       <div className="mobile_menu">
-        <img src={menubar} alt="" style={{height:"20px"}} onClick={()=>setMenu("show")}/>
+        <img
+          src={menubar}
+          alt=""
+          style={{ height: "20px" }}
+          onClick={() => setMenu("show")}
+        />
       </div>
-      <div className="mobile_menu_options" style={menu === "hide" ? {display:"none"}:{display:"flex"}}>
+      <div
+        className="mobile_menu_options"
+        style={menu === "hide" ? { display: "none" } : { display: "flex" }}
+      >
         <div className="mob_menu_items">
-        <div className="mob_menu_item">
-        <Link to={"/services"} onClick={()=>setMenu("hide")}>Services</Link>
-        </div>
-        <div className="mob_menu_item">
-        <Link to={'/lawyerlisting'} onClick={()=>setMenu("hide")}>Find a Lawyer</Link>
-        </div>
-        <div className="mob_menu_item">
-        <Link to={'/legalkit'} onClick={()=>setMenu("hide")}>Legal Documents</Link>
-        </div>
-        <div className="mob_menu_item">
-        <Link to={"/consult"} onClick={()=>setMenu("hide")}>Case Request</Link>
-        </div>
-        <div className="mob_menu_item">
-        <Link to={"/blog"} onClick={()=>setMenu("hide")}>Blog</Link>
-        </div>
+          <div className="mob_menu_item">
+            <Link to={"/services"} onClick={() => setMenu("hide")}>
+              Services
+            </Link>
+          </div>
+          <div className="mob_menu_item">
+            <Link to={"/lawyerlisting"} onClick={() => setMenu("hide")}>
+              Find a Lawyer
+            </Link>
+          </div>
+          <div className="mob_menu_item">
+            <Link to={"/legalkit"} onClick={() => setMenu("hide")}>
+              Legal Documents
+            </Link>
+          </div>
+          <div className="mob_menu_item">
+            <Link to={"/consult"} onClick={() => setMenu("hide")}>
+              Case Request
+            </Link>
+          </div>
+          <div className="mob_menu_item">
+            <Link to={"/blog"} onClick={() => setMenu("hide")}>
+              Blog
+            </Link>
+          </div>
         </div>
         <div className="close">
-          <i className="fa-solid fa-x" onClick={()=>setMenu("hide")}></i>
+          <i className="fa-solid fa-x" onClick={() => setMenu("hide")}></i>
         </div>
       </div>
     </navbar>

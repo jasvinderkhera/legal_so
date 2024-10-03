@@ -65,7 +65,7 @@ function Lawyer() {
             <img src={rating} alt="" />
                                 </div>
                                 </div>
-                                <p>"I had the pleasure of working with Harshwardhan for my business’s legal needs. He was thorough and attentive, ensuring that all aspects of our contracts were handled with care. His expertise in corporate law gave me confidence, and I highly recommend him!"</p>
+                                <p>"I had the pleasure of working with {lawyerItem.name} for my business’s legal needs. He was thorough and attentive, ensuring that all aspects of our contracts were handled with care. His expertise in corporate law gave me confidence, and I highly recommend him!"</p>
                                 <span>24 October 2022</span>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ function Lawyer() {
             <img src={rating} alt="" />
                                 </div>
                                 </div>
-                                <p>I cannot recommend Harshwardhan enough for family law matters. He handled my child custody case with the utmost care and compassion. He was always available to answer my questions, and I felt supported throughout the entire process.</p>
+                                <p>I cannot recommend {lawyerItem.name} enough for family law matters. He handled my child custody case with the utmost care and compassion. He was always available to answer my questions, and I felt supported throughout the entire process.</p>
                                 <span>20 September 2024</span>
                             </div>
                         </div>

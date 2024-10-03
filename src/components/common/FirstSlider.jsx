@@ -5,6 +5,7 @@ import gear from "../../assets/images/legal_documents/gear.png"
 import contract from "../../assets/images/legal_documents/contract.png"
 import disclosure from "../../assets/images/legal_documents/disclosure.png"
 import workshop from "../../assets/images/legal_documents/workshop.png"
+import { Link } from "react-router-dom";
 
 function FirstSlider() {
   const settings = {
@@ -50,7 +51,7 @@ function FirstSlider() {
                   </li>
                   <li>Operating Agreement or ByLaws</li>
                 </ul>
-                <a href="">Order Now</a>
+                <Link to={'/legalkit'}>Order Now</Link>
               </div>
             </div>
         </div>
@@ -67,7 +68,7 @@ function FirstSlider() {
                   <li>Protects sensitive business information</li>
                   <li>Ensure non-disclousre of trade secrets</li>
                 </ul>
-                <a href="">Order Now</a>
+                <Link to={'/legalkit'}>Order Now</Link>
               </div>
             </div>
         </div>
@@ -84,7 +85,7 @@ function FirstSlider() {
                   <li>Outlines salary, benefits and termination terms</li>
                   <li>Protect both employer and employee rights</li>
                 </ul>
-                <a href="">Order Now</a>
+                <Link to={'/legalkit'}>Order Now</Link>
               </div>
             </div>
         </div>
@@ -98,7 +99,7 @@ function FirstSlider() {
                   <li>Specific payment terms and timelines</li>
                   <li>Ensures legal protection for both parties</li>
                 </ul>
-                <a href="">Order Now</a>
+                <Link to={'/legalkit'}>Order Now</Link>
               </div>
             </div>
         </div>
@@ -118,7 +119,7 @@ function FirstSlider() {
                   <li>Conditions under which the POA can be revoked</li>
                   <li>Specifies powers the agent is authorized to exercise</li>
                 </ul>
-                <a href="">Order Now</a>
+                <Link to={'/legalkit'}>Order Now</Link>
               </div>
             </div>
         </div>
